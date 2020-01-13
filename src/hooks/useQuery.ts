@@ -1,7 +1,7 @@
 import { DocumentNode } from 'graphql';
 import { useCallback, useMemo } from 'react';
 import { pipe, concat, fromValue, switchMap, map, scan } from 'wonka';
-import { useOperator } from 'react-wonka';
+import { useOperator } from './useOperator';
 
 import { useClient } from '../context';
 import { OperationContext, RequestPolicy } from '../types';
@@ -65,7 +65,8 @@ export const useQuery = <T = any, V = object>(
             fromValue({ fetching: true }),
             pipe(
               query$,
-              map(({ stale, data, error, extensions }) => ({
+              // @ts-ignore
+              map(({ stale, data, error, extensions }) => console.log('mapping', data) || ({
                 fetching: false,
                 stale: !!stale,
                 data,

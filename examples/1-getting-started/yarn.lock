@@ -253,6 +253,13 @@
   dependencies:
     wonka "^3.2.0"
 
+"@urql/exchange-suspense@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@urql/exchange-suspense/-/exchange-suspense-0.1.0.tgz#75f1f928f949c1463458961c33640388f09c7efb"
+  integrity sha512-P8/bnvUFDWxWQPxEXvidUxZ5pBhqmTF2GWIkgMIo1F/c/ilf5YbmHLaMDTfbrVOEalBwwTCyZbypoX+ghs/xAQ==
+  dependencies:
+    wonka "^3.1.1"
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -3992,30 +3999,30 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^16.9.0:
-  version "16.9.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.9.0.tgz#5e65527a5e26f22ae3701131bcccaee9fb0d3962"
-  integrity sha512-YFT2rxO9hM70ewk9jq0y6sQk8cL02xm4+IzYBz75CQGlClQQ1Bxq0nhHF6OtSbit+AIahujJgb/CPRibFkMNJQ==
+react-dom@^16.12.0:
+  version "16.12.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.12.0.tgz#0da4b714b8d13c2038c9396b54a92baea633fe11"
+  integrity sha512-LMxFfAGrcS3kETtQaCkTKjMiifahaMySFDn71fZUNpPHZQEzmk/GiAeIT8JSOrHB23fnuCOMruL2a8NYlw+8Gw==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.15.0"
+    scheduler "^0.18.0"
 
 react-is@^16.8.1:
   version "16.8.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.1.tgz#a80141e246eb894824fb4f2901c0c50ef31d4cdb"
   integrity sha512-ioMCzVDWvCvKD8eeT+iukyWrBGrA3DiFYkXfBsVYIRdaREZuBjENG+KjrikavCLasozqRWTwFUagU/O4vPpRMA==
 
-react-wonka@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-wonka/-/react-wonka-1.0.3.tgz#2d997403be347489e1161cb58d502ac683499847"
-  integrity sha512-7ocCcMnSxc7zD06V6H2Er4PJNbHQL2bityy6aZPrsn2JqJSP4SEkCzdvCk+nQVKDDqO8Lk5L5F9GG7PUB8gGsA==
+react-wonka@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-wonka/-/react-wonka-2.0.0.tgz#d62d87c9c93ec3e603ecf1582df3615aadc5c2e9"
+  integrity sha512-7q0CNBnSltRyzb61joCxKqVntHbRJRhP/WPxEx+zM8l9Yd+0IRevJuPG8iCamgrGphusX5xtEtd4yyX7qvRM1g==
 
-react@^16.9.0:
-  version "16.9.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"
-  integrity sha512-+7LQnFBwkiw+BobzOF6N//BdoNw0ouwmSJTEm9cglOOmsg/TMiFHZLe2sEoN5M7LgJTj9oHH0gxklfnQe66S1w==
+react@^16.12.0:
+  version "16.12.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.12.0.tgz#0c0a9c6a142429e3614834d5a778e18aa78a0b83"
+  integrity sha512-fglqy3k5E+81pA8s+7K0/T3DBCF0ZDOher1elBFzF7O6arXJgzyu/FW+COxFvAWXJoJN9KIZbT2LXlukwphYTA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -4197,10 +4204,10 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-scheduler@^0.15.0:
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.15.0.tgz#6bfcf80ff850b280fed4aeecc6513bc0b4f17f8e"
-  integrity sha512-xAefmSfN6jqAa7Kuq7LIJY0bwAPG3xlCj0HMEBQk1lxYiDKZscY2xJ5U/61ZTrYbmNQbXa+gc7czPkVo11tnCg==
+"scheduler@>= 0.16.0", scheduler@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.18.0.tgz#5901ad6659bc1d8f3fdaf36eb7a67b0d6746b1c4"
+  integrity sha512-agTSHR1Nbfi6ulI0kYNK0203joW2Y5W4po4l+v03tOoiJKpTBbxpNhWDvqc/4IcOw+KLmSiQLTasZ4cab2/UWQ==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -5179,15 +5186,20 @@ wide-align@^1.1.0:
   dependencies:
     string-width "^1.0.2 || 2"
 
+wonka@^3.1.1:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/wonka/-/wonka-3.2.2.tgz#4d5c79fee2e6042066ba7aa86bd2f180487cc0c3"
+  integrity sha512-btmYyFDuDpJXJfELkFkoTjfyn0M+/a54/kjqt3qGN/h/90A8Ynq8qxG4b0uXBAOvJNRnWnL8+d0C3r6Clt8PYA==
+
 wonka@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/wonka/-/wonka-3.2.0.tgz#40b9ce8e0c375127437661290e98e5d9e5278440"
   integrity sha512-sHCLouGzTclUlp1sdXAhuTqGMIoAQfpBit9puepaINPVqDBRtC8DPWtTUHC0DJIdFSO+DsO86AFBFCDor7Sn0g==
 
-wonka@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/wonka/-/wonka-3.2.1.tgz#f66123fabbb260f23a4e89f1526317169203e258"
-  integrity sha512-LpquZ9PJtYJ31AlMPp5tEba1y+S+wUmY7OyFLGZCmGSNO1ZOTTZGp/HbieFzP5fVJ9fWXCus3ecgDjwAssHSGg==
+wonka@^4.0.5:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/wonka/-/wonka-4.0.6.tgz#810e080f14f1ada7e5561b5504292de7fd5fdb1a"
+  integrity sha512-TYvOaAEyw50aracY97gXTcP5eifVNp+djbXbsBmR32luS4OTdIOBLasKH7SIlYVCATS5O5Fk0bP1gocg20AbIg==
 
 worker-farm@^1.7.0:
   version "1.7.0"

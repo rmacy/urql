@@ -42,6 +42,7 @@ const TodoQuery = gql`
 
 export const Home: FC = () => {
   const [res, executeQuery] = useQuery<QueryResponse>({ query: TodoQuery });
+  console.log({ ...res });
   const refetch = useCallback(
     () => executeQuery({ requestPolicy: 'network-only' }),
     [executeQuery]
@@ -55,10 +56,6 @@ export const Home: FC = () => {
   );
 
   const todos = useMemo(() => {
-    if (res.fetching || res.data === undefined) {
-      return <Loading />;
-    }
-
     if (res.error) {
       return <Error>{res.error.message}</Error>;
     }
